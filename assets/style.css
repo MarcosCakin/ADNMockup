@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #000000;
+    border-bottom: 0.5px solid #77f6e2;
+    filter: brightness(0.95);
+}
+
+main {
+    height: auto;
+    background-color: wheat;
+}
+
+footer {
+    background-color: #000000;
+    margin-top: auto;
+    border-top: 0.5px solid #77f6e2;
+    filter: brightness(0.95);
+}
+
+
+/* HEADER */ 
+    /*div del logo*/
+    .divLogo:hover {
+        transition: .25;
+        filter: drop-shadow(0px 0px 10px rgb(119,246,226));
+    }
+
+    /* div de la ul */
+    .navHeader {
+        width: 23rem;
+        justify-content: space-between;
+    }
+    /* li */
+    .nav-link, .nav-link:hover {
+        font-size: 1.1rem;
+        color: #77f6e2;
+        filter: brightness(1.15);
+    }
+
+    /* subrayado de los li */
+    .nav-link::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0.2em;
+        background: linear-gradient(to right, #77f6e2, #e8d434);
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        transition: 0.25s;
+    }
+    .nav-link:hover::after {
+        width: 100%;
+    }
+
+    /* menu hamburguesa */
+    .navbar-toggler-icon {
+        background-color: #e8d434;
+        border-radius: 30%;
+        border: 2px solid #9c8b0c;
+        font-size: 2rem;
+    }
+
+
+
+
+
+
+/* MAIN */
+    .home {
+        background-image: url(/assets/homeBg.png);
+    }
+
+    .homeLogo {
+        width: 40%;
+    }
+
+    .box1 {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-size: 2rem;
+    }
+    
+    #gradiendBg {
+        background: linear-gradient(to right, #77f6e2, #e8d434);
+        opacity: .25;
+    }
+
+
+
+
+
+
+
+
+
+
+    
+/* FOOTER */
+.divFooter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+        background-color: #000000;
+        color: #77f6e2;
+    }
+
+    .aFooter{
+        color: #77f6e2;
+        text-decoration: none;
+    }
+    .aFooter:hover {
+        filter: drop-shadow(0px 0px 5px rgb(119,246,226));    
+        text-decoration: underline;
+    }
+
+
+@media screen and (max-width:575px){
+    
+}
