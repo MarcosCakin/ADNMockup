@@ -26,8 +26,9 @@ footer {
 /* HEADER */ 
     /*div del logo*/
     .divLogo:hover {
-        transition: .25;
         filter: drop-shadow(0px 0px 10px rgb(119,246,226));
+        animation: shake 1s linear 0s 1 normal none;
+        transition: .25;
     }
 
     /* div de la ul */
@@ -72,27 +73,38 @@ footer {
 
 
 /* MAIN */
+    /* home */
     .home {
         background-image: url(/assets/homeBg.png);
+        height: 100vh;
     }
-
-    .homeLogo {
-        width: 40%;
-    }
-
-    .box1 {
-        width: 60%;
+    /* home 1/2 */
+    .home1 {
+        width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .us {
+        padding: 1rem;
         color: black;
-        font-size: 2rem;
+        font-size: 1.8em;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 1px solid #297065;
+        border-radius: 10%;
+        opacity: .85;
+        background: linear-gradient(to right,#77f6e2, #e8d434);
+        cursor:default;
     }
-    
-    #gradiendBg {
-        background: linear-gradient(to right, #77f6e2, #e8d434);
-        opacity: .25;
+   /* home 2/2 */
+    .home2 {
+        width: 50%;
+    }    
+    .logoHome {
+        width: 100%;
+        animation: hook 2s ease 1s infinite reverse none;
     }
+   
 
 
 
@@ -103,7 +115,7 @@ footer {
 
 
 
-    
+
 /* FOOTER */
 .divFooter {
         display: flex;
@@ -124,6 +136,66 @@ footer {
     }
 
 
+
+
+
 @media screen and (max-width:575px){
     
+}
+
+/* Keyframes animations */
+   @keyframes hook {
+    0% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+        transform-origin: center center;
+    }
+
+    10% {
+        animation-timing-function: ease-in;
+        transform: scale(0.91);
+    }
+
+    17% {
+        animation-timing-function: ease-out;
+        transform: scale(0.98);
+    }
+
+    33% {
+        animation-timing-function: ease-in;
+        transform: scale(0.87);
+    }
+
+    45% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: translateX(10px);
+    }
+
+    80% {
+        transform: translateX(8px);
+    }
+
+    90% {
+        transform: translateX(-8px);
+    }
 }
