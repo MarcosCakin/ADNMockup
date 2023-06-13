@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 header {
     background-color: #000000;
     border-bottom: 1px solid #173d37;
@@ -11,12 +10,10 @@ header {
     position: fixed;
     z-index: 100;
 }
-
 main {
     height: auto;
     background-color: wheat;
 }
-
 footer {
     background-color: #000000;
     margin-top: auto;
@@ -28,12 +25,12 @@ footer {
 
 /* HEADER */ 
 
+
     /*div del logo*/
     .divLogo:hover {
         filter: drop-shadow(0px 0px 10px rgb(119,246,226));
         animation: shake 1s linear 0s 1 normal none;
     }
-
     /* div de la ul */
     .navHeader {
         width: 23rem;
@@ -52,7 +49,6 @@ footer {
             background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-
     /* subrayado de los li */
     .nav-link::after {
         content: "";
@@ -68,7 +64,6 @@ footer {
     .nav-link:hover::after {
         width: 100%;
     }
-
     /* menu hamburguesa */
     .navbar-toggler-icon {
         background-color: #e8d434;
@@ -80,16 +75,15 @@ footer {
 
 /* MAIN */
 
-/* MAIN > home */
+
+/* home */
     #home {
         background-color: #0a0a0a;
     }
-    
     .banner {
         height: 100vh;
         padding: 2em;
     }
-
     /* home 1/2 */
     .homeUs {
         display: flex;
@@ -103,7 +97,6 @@ footer {
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         cursor:default;
     }
-    
      /* home 2/2 */ 
     .homeLogo {
         height: 480px;
@@ -114,15 +107,6 @@ footer {
         height: 100%;
         padding-bottom: 1em;
     }
-
-    /* to right gradient color for text */
-    .text-gradient {
-        background: linear-gradient( to right, #77f6e2, #e8d434);
-        -webkit-background-clip: text;
-            background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    
     /* boxes con especificaciones */
     .boxInfo {
         height: 220px;
@@ -131,78 +115,136 @@ footer {
         margin: 2em;
         padding: 2em;
         text-align: center;
+        cursor:default;
     }
     .boxInfo:hover {
         animation: boxRotate 0.5s ease 0s 1 normal forwards;
         .titulo{
                 background: linear-gradient( to right, #77f6e2, #e8d434);
                 -webkit-background-clip: text;
-                    background-clip: text;
+                background-clip: text;
                 -webkit-text-fill-color: transparent;
         }
     }
 
-    .gradient-border {
+
+/* nosotros */
+    #about {
+        background-image: url(/assets/homeBg.png);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 5.5em;   
+    }
+    /* container del titulo about us y el subtitulo*/
+    .aboutContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #000000;
+        border-radius: 2em;
+        opacity: 0.85;
+    }
+    /* subtitulo about us*/
+    .textAboutUs {
+        font-size: 1.3em;
+        color: white;
+        text-align: center;
+    }
+    /*container de div de githubs */
+    .gitContainer{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1em;
+        border-radius: 1em;
+        margin: 2em;
+        background-color:#000000;
+        opacity: 0.85;
+    }
+    /*div github*/
+    .divGit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 6em;
+        height: 8em;
+        padding: 1em;
+        margin: 1em;
+        background-color: #000000;
+    }
+    .divGit:hover{
         background-color: #000000;
         border: 2px solid transparent;
         border-image: linear-gradient(to right, #77f6e2, #e8d434) 1;
         border-image-slice: 10;
-      }
-
-
-/* MAIN > nosotros */
-
-#about {
-    background-image: url(/assets/homeBg.png);
-    height: 100vh;
-}
-
-
-
-/* MAIN > proyects */
-#proyects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #000000;
-    padding: 5em;
-}
-
-.proyectTitle {
-        background: linear-gradient( to right, #77f6e2, #e8d434);
-        -webkit-background-clip: text;
+        .userGit{
+            background: linear-gradient( to right, #77f6e2, #e8d434);
+            -webkit-background-clip: text;
             background-clip: text;
-        -webkit-text-fill-color: transparent;
-}
-
-.divProyects {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.boxProyects {
-    width: 300px;
-    height: 200px;
-    border: 2px solid white;
-    margin: 1em;
-}
-.boxProyects:hover {
-    transition: .3;
-    background-color: #000000;
-    border: 4px solid transparent;
-    border-image: linear-gradient(to right, #77f6e2, #e8d434) 1;
-    border-image-slice: 10;
-}
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    /*img del div de github de c/u*/
+    .imgGit {
+        height: 6em;
+        width: 5em;
+        border-radius: 2em;
+        align-items: center;
+        margin-bottom: 0.5em;
+    }
+    /*user de gh de c/u*/
+    .userGit{
+        text-decoration: none;
+        color: white;
+    }
 
 
+/* proyects */
+    #proyects {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #000000;
+        padding: 5em;
+    }
+    /*container de los div proyects*/
+    .containerProyects {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    /* div de los proyectos*/
+    .divProyects {
+        width: 300px;
+        height: 200px;
+        border: 2px solid white;
+        margin: 1em;
+    }
+    .divProyects:hover {
+        transition: .3;
+        background-color: #000000;
+        border: 4px solid transparent;
+        border-image: linear-gradient(to right, #77f6e2, #e8d434) 1;
+        border-image-slice: 10;
+    }
+
+
+/* contact */
+    #contact {
+        background: url(/assets/homeBg.png);
+        height: 100vh;
+    }
 
 
 
 /* FOOTER */
-.divFooter {
+    .divFooter {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -210,7 +252,6 @@ footer {
         background-color: #000000;
         color: #77f6e2;
     }
-
     .aFooter{
         color: #77f6e2;
         text-decoration: none;
@@ -220,21 +261,41 @@ footer {
         text-decoration: underline;
     }
 
-
-
-
-
-
-/* a este px arranca el hamburguer menu */
-@media screen and (max-width:575px){
-    .us {
-        text-align: center;
+/* fuentes de titulo, color degradee */
+    /* Title letter*/
+    .title {
+        font-size: 3em;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        cursor:default;
     }
-}
+    /* gradient color for text */
+    .textGradient {
+        background: linear-gradient( to right, #77f6e2, #e8d434);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    /* gradient border */
+    .gradient-border {
+        background-color: #000000;
+        border: 2px solid transparent;
+        border-image: linear-gradient(to right, #77f6e2, #e8d434) 1;
+        border-image-slice: 10;
+    }
+
+    /* a este px arranca el hamburguer menu */
+    @media screen and (max-width:575px){
+        .us {
+            text-align: center;
+        }
+        .aboutContainer {
+            text-align: center;
+        }
+    }
 
 /* Keyframes animations */
-/* shake for icon */
-@keyframes shake {
+    /* shake for icon */
+    @keyframes shake {
     0%,
     100% {
         transform: translateX(0);
@@ -260,10 +321,9 @@ footer {
     90% {
         transform: translateX(-8px);
     }
-}  
-
-/* .homeUs to left */
-  @keyframes SwingLeft {
+    } 
+    /* .homeUs to left */
+    @keyframes SwingLeft {
 	0% {
 		opacity: 0;
 		transform: rotateY(100deg);
@@ -275,10 +335,9 @@ footer {
 		transform: rotateY(0);
 		transform-origin: left;
 	}
-}
-
-/* .homeImg to right */
-@keyframes SwingRight {
+    }
+    /* .homeImg to right */
+    @keyframes SwingRight {
 	0% {
 		opacity: 0;
 		transform: rotateY(-100deg);
@@ -290,10 +349,9 @@ footer {
 		transform: rotateY(0);
 		transform-origin: right;
 	}
-}
-
-/* .boxInfo rotate */
-@keyframes boxRotate {
+    }
+    /* .boxInfo rotate */
+    @keyframes boxRotate {
 	0% {
 		transform: rotate(0);
 	}
@@ -301,7 +359,4 @@ footer {
 	100% {
 		transform: rotate(3deg);
 	}
-}
-
-
-  
+    }  
