@@ -246,15 +246,12 @@ footer {
         
     }
     /* div que contiene el form y el div con icons */
-    .divContainerCont {
+    .divContainerContact {
         background-color: #000000;
         border: 1px solid white;
         margin-top: 4em;
         padding: 1em;
         border-radius: 1em;
-    }
-    .divForm-Icons {
-
     }
         /* form */
         .formContact{
@@ -264,16 +261,16 @@ footer {
             flex-direction: column;
             padding: 1em;
         }
-        /* inputs de name and email */
-        .contactInput {
-            min-width: 50vw;
-        }
-        /* input de msg */
-        .contactInputMsg{
-            height: 20vh;
-            min-width: 50vw;
-        }
-        
+            /* inputs de name and email */
+            .contactInput {
+                min-width: 50vw;
+                padding: 5px;
+            }
+            /* input de msg */
+            .contactInputMsg{
+                height: 20vh;
+                min-width: 50vw;
+            }
         /* div de iconos*/
         .iconsContact{
             display: flex;
@@ -282,18 +279,18 @@ footer {
             border-top: 1px solid white;
             padding: 1em;
         }
-        /*iconos*/
-        i{
-            font-size: 4em;
-            margin: 4px;
-            color: beige;
-        }
-        i:hover {
-            background: linear-gradient( to right, #77f6e2, #e8d434);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+            /*iconos*/
+            i{
+                font-size: 4em;
+                margin: 4px;
+                color: white;
+            }
+            i:hover {
+                background: linear-gradient( to right, #77f6e2, #e8d434);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
         
 
 /* FOOTER */
